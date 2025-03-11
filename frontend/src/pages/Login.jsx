@@ -22,6 +22,10 @@ const Login = () => {
         }
     };
 
+    const handleRegisterRedirect = () => {
+        navigate("/register"); // التوجيه إلى صفحة التسجيل عند الضغط على الزر
+    };
+
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100">
             <div className="bg-white p-8 rounded-lg shadow-md w-96">
@@ -54,6 +58,16 @@ const Login = () => {
                         Login
                     </button>
                 </form>
+                <div className="mt-4 text-center">
+                    <p className="text-sm">
+                        You don't have an account?{" "}
+                        <button 
+                            onClick={handleRegisterRedirect} 
+                            className="text-blue-600 hover:underline">
+                            Create account
+                        </button>
+                    </p>
+                </div>
             </div>
         </div>
     );

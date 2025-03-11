@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import Cookies from "js-cookie"; // استيراد مكتبة لإدارة الكوكيز
 
 const Home = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
